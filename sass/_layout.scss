@@ -126,3 +126,22 @@ p {
 .pied-page{
     grid-area: pied-page;
 }
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    
+}
+nav ul li{
+    list-style-type: none;
+    font-size: 1.5rem;
+}
+footer{
+    align-items: center;
+}
+footer p{
+    font-size: 1rem;
+}
+header{
+    align-items: center;
+}
