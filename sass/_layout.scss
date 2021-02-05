@@ -9,14 +9,14 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     // background-color: rgb(179, 179, 204);
-    background-color: #fff;
+    background-color: #238899;
 
 }
 
 
 body::after {
     content : "";
-    clip-path: polygon(0 0, 80% 0 , 50% 100% , 0 100%);
+    clip-path: polygon(0% 0%, 63% 0, 100% 50%, 63% 100%, 0% 100%);
     //background-color: rgb(43, 71, 233);
     background-color: couleur(primaire);
     position: absolute;
@@ -40,7 +40,7 @@ p {
 }
 
 .bloc {
-    border : 1px solid #666;
+    border : 1px solid black;
     background-color:transparent;
     color :wheat;
     font-size: 3rem;
@@ -93,7 +93,7 @@ p {
 .annonce1{
     grid-area: annonce1;
     background-color: #efebc5;
-    color: #5e6e81;
+    color: #238899;
     border-radius: 10px;
     box-shadow: 7px 3px 11px 4px #757472;
     padding: 42px;
