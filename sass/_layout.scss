@@ -135,6 +135,13 @@ nav ul{
 nav ul li{
     list-style-type: none;
     font-size: 1.5rem;
+    transition-duration: 2s;
+    border-radius: 30%;
+}
+nav ul li:hover{
+    background-color: black;
+    transition-duration: 2s;
+    border-radius: 30%;
 }
 footer{
     align-items: center;
