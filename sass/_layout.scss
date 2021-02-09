@@ -40,7 +40,6 @@ p {
 }
 
 .bloc {
-    border : 1px solid black;
     background-color:transparent;
     color :wheat;
     font-size: 3rem;
@@ -104,9 +103,14 @@ p {
         }
     }
 .principal{
-    display : grid;
-    place-items: center;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     grid-area: principal;
+    h3{
+        padding: 1rem 0 1rem 0;
+    }
 }
 .pied-page{
     grid-area: pied-page;
