@@ -83,7 +83,6 @@ p {
 
 .entete{
     grid-area: entete;
-
 }
 
 .menu{
@@ -104,20 +103,6 @@ p {
         align-items: center;
         }
     }
-
-.annonce2{
-    padding: 42px;
-    margin: 20px;
-    background-color: #efebc5;
-    color: #1c2127;
-    grid-area: annonce2;
-    section {
-        display : flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-}
 .principal{
     display : grid;
     place-items: center;
@@ -151,4 +136,24 @@ footer p{
 }
 header{
     align-items: center;
+}
+.entete{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #173338;
+        }
+    }
 }

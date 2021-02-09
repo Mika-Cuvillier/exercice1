@@ -5,6 +5,77 @@ variable
 mixins
 ------------------------------------------ */
 /* ---------------------------------------
+animations
+------------------------------------------ */
+.animation div {
+  -webkit-animation: anim-entete 1s both cubic-bezier(0.43, 1.06, 0.97, 1.1);
+          animation: anim-entete 1s both cubic-bezier(0.43, 1.06, 0.97, 1.1);
+}
+
+@-webkit-keyframes anim-entete {
+  0% {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes anim-entete {
+  0% {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+/*
+.animation div:nth-last-of-type(1){
+    animation-delay: .5s;
+}
+.animation div:nth-last-of-type(2){
+    animation-delay: 1s;
+}
+.animation div:nth-last-of-type(3){
+    animation-delay: 1.5s;
+}
+.animation div:nth-last-of-type(4){
+    animation-delay: 2s;
+}
+.animation div:nth-last-of-type(5){
+    animation-delay: 2.5s;
+}*/
+.animation div:nth-last-of-type(1) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.animation div:nth-last-of-type(2) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.animation div:nth-last-of-type(3) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.animation div:nth-last-of-type(4) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.animation div:nth-last-of-type(5) {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+/* ---------------------------------------
 layout
 ------------------------------------------ */
 * {
@@ -144,24 +215,6 @@ p {
           align-items: center;
 }
 
-.annonce2 {
-  padding: 42px;
-  margin: 20px;
-  background-color: #efebc5;
-  color: #1c2127;
-  grid-area: annonce2;
-}
-
-.annonce2 section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
 .principal {
   display: -ms-grid;
   display: grid;
@@ -220,5 +273,50 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.entete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.entete section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.entete section div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #173338;
 }
 /*# sourceMappingURL=style.css.map */
