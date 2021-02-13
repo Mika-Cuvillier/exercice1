@@ -64,7 +64,10 @@ animations
 
 @keyframes anim-1 {
   0% {
-    transform: translateY(-500px);
+    transform: translateY(-500px) translateX(-500px);
+  }
+  100% {
+    transform: scale(0);
   }
   100% {
     transform: translate(0);
@@ -73,7 +76,10 @@ animations
 
 @keyframes anim-2 {
   0% {
-    transform: translateY(-600px);
+    transform: translateY(-600px) translateX(600px);
+  }
+  100% {
+    transform: scale(0);
   }
   100% {
     transform: translate(0);
@@ -85,13 +91,19 @@ animations
     transform: translateY(-500px);
   }
   100% {
+    transform: scale(0);
+  }
+  100% {
     transform: translate(0);
   }
 }
 
 @keyframes anim-4 {
   0% {
-    transform: translateY(600px);
+    transform: translateY(600px) translateX(-600px);
+  }
+  100% {
+    transform: scale(0);
   }
   100% {
     transform: translate(0);
@@ -100,7 +112,10 @@ animations
 
 @keyframes anim-5 {
   0% {
-    transform: translateY(500px);
+    transform: translateY(500px) translateX(500px);
+  }
+  100% {
+    transform: scale(0);
   }
   100% {
     transform: translate(0);
